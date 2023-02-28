@@ -18,8 +18,7 @@
     <div class="container">
       <div class="phone-app-demo"><img src="{% static 'assets2/images/mobile-app.png' %}" ></div>
       <div class="form-data">
-        <form action="{% url 'sign-in' %}" method="POST">
-          {% csrf_token %}
+        <form action="{% url 'sign-in' %}" method="POST">{% csrf_token %}
           <div class="logo">
             <img src="{% static 'assets2/images/logo.png' %}" alt="logo">
           </div>
